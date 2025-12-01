@@ -1,4 +1,4 @@
-# CASOS DE USO – SchoolManager
+# CASOS DE USO
 
 ---
 
