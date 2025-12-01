@@ -1,70 +1,104 @@
 # projeto
 
+# DOCUMENTO DE VISÃO DO PRODUTO
+
+## SchoolManager – Sistema Integrado de Gestão Escolar
 
 ---
 
-### `/docs/visao_do_produto.md`
-```markdown
-# VISÃO DO PRODUTO – SchoolManager
-
 ## 1. Nome do Produto
+
 **SchoolManager – Sistema Integrado de Gestão Escolar**
+
+---
 
 ## 2. Problema a Ser Solucionado e Oportunidades
 
-### Problemas Identificados
-- Processos escolares feitos manualmente ou em múltiplas plataformas desconectadas.
-- Comunicação ineficiente entre escola, responsáveis e alunos.
-- Controle fragmentado de matrículas, notas e frequência.
-- Geração de relatórios acadêmicos e administrativos lenta e propensa a erros.
-- Professores sobrecarregados com tarefas administrativas.
+### Problema
+
+As escolas ainda dependem de processos manuais ou sistemas desconexos, o que gera problemas como:
+
+* Demora para realizar matrículas e organizar turmas.
+* Lançamento de notas e frequências de forma manual e sujeita a erros.
+* Comunicação ineficiente entre escola, professores, alunos e responsáveis.
+* Dificuldade para emitir documentos e relatórios de forma rápida.
+* Falta de integração entre setores (secretaria, direção e professores).
 
 ### Oportunidades
-- Automatizar processos e centralizar informações.
-- Agilizar emissão de documentos e relatórios.
-- Melhorar a comunicação e o acompanhamento pedagógico.
-- Reduzir trabalho burocrático dos professores.
-- Oferecer dashboards e indicadores para a direção.
 
-## 3. Stakeholders e Necessidades
+* Centralizar todos os processos em um único sistema.
+* Reduzir erros e retrabalhos administrativos.
+* Automatizar matrículas, documentos e relatórios.
+* Aumentar a eficiência e agilidade da gestão escolar.
+* Oferecer uma comunicação mais clara e acessível com alunos e responsáveis.
 
-- **Direção Escolar:** relatórios gerenciais, indicadores e relatórios de desempenho.
-- **Secretaria:** cadastro/matrícula, controle de turmas, emissão de documentos.
-- **Professores:** lançamento de notas e faltas, consulta a turmas e alunos.
-- **Alunos:** acesso a boletins, tarefas e calendário.
-- **Responsáveis:** acompanhamento de desempenho e comunicação com a escola.
-- **Equipe de TI:** sistema seguro, modular e com fácil manutenção.
+---
 
-## 4. Requisitos Funcionais (mínimos)
+## 3. Stakeholders e Suas Necessidades
 
-- **RF01** Cadastro e gerenciamento de alunos (CRUD).
-- **RF02** Gerenciamento de turmas, disciplinas e horários.
-- **RF03** Matrícula, rematrícula e transferência entre turmas.
-- **RF04** Lançamento de notas e frequências pelos professores.
-- **RF05** Emissão de boletins, histórico e relatórios.
-- **RF06** Controle de usuários e permissões (direção, secretaria, professor, aluno, responsável).
-- **RF07** Comunicação interna: avisos, mensagens e comunicados.
-- **RF08** Geração de documentos: declaração de matrícula, atestados, etc.
-- **RF09** Autenticação segura (login, recuperação de senha).
+| Stakeholder            | Necessidades                                                    |
+| ---------------------- | --------------------------------------------------------------- |
+| **Direção Escolar**    | Relatórios, indicadores e visão geral da instituição.           |
+| **Secretaria Escolar** | Agilidade no cadastro, matrícula e emissão de documentos.       |
+| **Professores**        | Lançamento rápido de notas e frequência; acesso às turmas.      |
+| **Alunos**             | Acesso a notas, boletins e informações acadêmicas.              |
+| **Responsáveis**       | Acompanhar desempenho e presença do aluno; receber comunicados. |
+| **Equipe de TI**       | Sistema seguro, modular e de fácil manutenção.                  |
+
+---
+
+## 4. Requisitos Funcionais
+
+### **RF01 – Cadastro de Alunos**
+
+Permitir cadastrar, editar, consultar e excluir alunos.
+
+### **RF02 – Gerenciamento de Matrículas e Turmas**
+
+Registrar matrícula, organizar turmas e controlar vagas.
+
+### **RF03 – Lançamento de Notas e Frequência**
+
+Professores registram notas e faltas dos alunos.
+
+### **RF04 – Emissão de Relatórios e Documentos**
+
+Gerar boletins, históricos e declarações escolares.
+
+### **RF05 – Controle de Usuários e Perfis**
+
+Autenticação e permissões para direção, secretaria, professores, alunos e responsáveis.
+
+### **RF06 – Comunicação Interna**
+
+Envio de mensagens e comunicados entre escola, alunos e responsáveis.
+
+---
 
 ## 5. Requisitos Não-Funcionais
 
-- **RNF01 — Segurança:** autenticação, autorização e criptografia de dados sensíveis.
-- **RNF02 — Performance:** carregamento de telas em tempo aceitável.
-- **RNF03 — Usabilidade:** interface intuitiva e responsiva.
-- **RNF04 — Escalabilidade:** suportar crescimento de usuários e dados.
-- **RNF05 — Disponibilidade:** alta disponibilidade, backup e recuperação.
-- **RNF06 — Compatibilidade:** acesso via web, mobile (responsivo).
-- **RNF07 — Manutenibilidade:** código modular e documentado.
+### **RNF01 – Segurança**
 
-## 6. Restrições e Premissas
+Criptografia de dados sensíveis e controle de acesso por perfil.
 
-- A implantação pode usar um banco SQL (MySQL/Postgres).
-- Usuários possuem e-mail válido para comunicação e recuperação de senha.
-- A escola fornecerá matriz curricular e horários iniciais para parametrização.
+### **RNF02 – Desempenho**
 
-## 7. Métricas de Sucesso
+As telas devem carregar em até 3 segundos.
 
-- Redução do tempo gasto em tarefas administrativas (meta: -40%).
-- Satisfação dos usuários (pesquisa interna > 80% positiva).
-- Taxa de uso dos professores para lançamento de notas > 95%.
+### **RNF03 – Usabilidade**
+
+Interface intuitiva, responsiva e fácil de navegar.
+
+### **RNF04 – Disponibilidade**
+
+Sistema disponível durante o horário escolar, com 99% de uptime.
+
+### **RNF05 – Manutenibilidade**
+
+Código modular, organizado e documentado.
+
+### **RNF06 – Escalabilidade**
+
+Capacidade de suportar aumento no número de alunos, turmas e usuários.
+
+---
