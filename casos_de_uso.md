@@ -95,7 +95,3 @@
 - Falha ao salvar → sugestão para tentar novamente.
 
 ---
-
-## Observações
-- Para cada UC principal, recomenda-se criar diagrama de sequência que mostre chamadas ao repositório (DAO) e validações.
-- Priorizar UC02 e UC03 para modelagem detalhada (envolvem regras de negócio e múltiplos atores).
