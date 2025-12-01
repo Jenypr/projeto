@@ -4,9 +4,6 @@
 
 ## 📌 Diagrama de Casos de Uso
 
-> **Insira aqui a imagem do Diagrama de Casos de Uso.**
-> Exemplo em Markdown:
-
 ```markdown
 ![Diagrama de Casos de Uso](diagrama_casos_de_uso.png)
 ```
