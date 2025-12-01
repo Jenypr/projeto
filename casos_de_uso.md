@@ -5,8 +5,7 @@
 ## 📌 Diagrama de Casos de Uso
 
 ```markdown
-![Diagrama de Casos de Uso](/.workpaces/projeto/imagens/diagrama_casos_de_uso.png)
-)
+![Diagrama de Casos de Uso](./imagens/diagrama_casos_de_uso.png)
 
 ```
 
