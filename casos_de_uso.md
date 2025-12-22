@@ -4,8 +4,6 @@
 
 ### 2.1 Diagrama de Casos de Uso
 
-### 2.1 Diagrama de Casos de Uso
-
 ![Diagrama de Casos de Uso do YTTrack](casos_de_uso.png)
 
 
