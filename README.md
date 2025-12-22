@@ -40,7 +40,8 @@ O YTTrack surge como uma oportunidade de centralizar o gerenciamento de conteúd
 
 ### 2.1 Diagrama de Casos de Uso
 
-> **Inserir aqui a imagem do Diagrama de Casos de Uso (UML)**
+![Diagrama de Casos de Uso do YTTrack](casos_de_uso.png)
+**
 >
 > O diagrama representa graficamente os atores do sistema YTTrack e suas interações com os principais casos de uso, utilizando a notação padrão da UML. A imagem deve ser inserida no formato PNG ou PDF e mantida também em sua versão editável na ferramenta utilizada para modelagem.
 
