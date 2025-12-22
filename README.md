@@ -1,5 +1,7 @@
 # YTTrack: Sistema de Gerenciamento de Conteúdo do YouTube
 
+# PARTE I – DOCUMENTO DE VISÃO
+
 ## 1. Documento de Visão
 
 ### 1.1 Nome do Produto
@@ -35,79 +37,3 @@ O YTTrack surge como uma oportunidade de centralizar o gerenciamento de conteúd
 * RNF04: O sistema deve ser escalável para suportar múltiplos usuários.
 
 ---
-
-## 2. Modelo de Casos de Uso
-
-### 2.1 Diagrama de Casos de Uso
-
-![Diagrama de Casos de Uso do YTTrack](casos_de_uso.png)
-
-
-> O diagrama representa graficamente os atores do sistema YTTrack e suas interações com os principais casos de uso, utilizando a notação padrão da UML.
-
-### 2.1 Atores
-
-* Usuário (Criador de Conteúdo)
-* Administrador
-
-### 2.2 Lista de Casos de Uso Principais
-
-* UC01: Autenticar Usuário
-* UC02: Cadastrar Canal do YouTube
-* UC03: Gerenciar Vídeos
-* UC04: Visualizar Métricas e Relatórios
-
----
-
-### UC01 – Autenticar Usuário
-
-* **Ator**: Usuário
-* **Pré-condições**: Usuário possuir cadastro no sistema.
-* **Pós-condições**: Usuário autenticado e com acesso ao sistema.
-* **Fluxo Principal**:
-
-  1. Usuário informa login e senha.
-  2. Sistema valida as credenciais.
-  3. Sistema libera o acesso.
-* **Fluxo Alternativo**:
-
-  * Credenciais inválidas → sistema exibe mensagem de erro.
-
----
-
-### UC02 – Cadastrar Canal do YouTube
-
-* **Ator**: Usuário
-* **Pré-condições**: Usuário autenticado.
-* **Pós-condições**: Canal registrado no sistema.
-* **Fluxo Principal**:
-
-  1. Usuário informa dados do canal.
-  2. Sistema valida as informações.
-  3. Sistema salva o canal.
-
----
-
-### UC03 – Gerenciar Vídeos
-
-* **Ator**: Usuário
-* **Pré-condições**: Canal cadastrado.
-* **Pós-condições**: Vídeos cadastrados ou atualizados.
-* **Fluxo Principal**:
-
-  1. Usuário seleciona um canal.
-  2. Usuário cadastra ou edita informações do vídeo.
-  3. Sistema salva as alterações.
-
----
-
-### UC04 – Visualizar Métricas e Relatórios
-
-* **Ator**: Usuário
-* **Pré-condições**: Vídeos cadastrados.
-* **Pós-condições**: Relatório exibido.
-* **Fluxo Principal**:
-
-  1. Usuário solicita relatório.
-  2. Sistema processa os dados.
-  3. Sistema exibe métricas e gráficos.
